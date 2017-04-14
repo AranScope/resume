@@ -21,7 +21,6 @@ gulp.task('pug', function() {
     .pipe(reload({stream:true}));
 });
 
-// watch Sass files for changes, run the Sass preprocessor with the 'sass' task and reload
 gulp.task('serve', ['sass'], function() {
   browserSync({
     server: {
@@ -31,6 +30,7 @@ gulp.task('serve', ['sass'], function() {
 
   gulp.watch('app/scss/*.scss', ['sass']);
   gulp.watch('app/pug/*.pug', ['pug']);
+  gulp.watch('app/markdown/*.md', ['pug']);
 });
 
 gulp.task('default', ['sass', 'pug', 'serve']);
