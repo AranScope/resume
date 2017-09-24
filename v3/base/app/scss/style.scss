@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900');
+
+$header-image-url: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/foggy-mountain-ridge-eric-tressler.jpg";
+
+$timeline-line-color: #f5f5f5;
+$timeline-dot-color: #f0f0f0;
+
+$icon-color: #e3e3e3;
+
+$text-heading-color: #3C3C3C;
+$text-header-color: white;
+$text-body-color: #1E1717;
+$base-font-size: 12px;
+$font-family: "Lato", sans-serif;
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    background: rgb(204,204,204); 
+    font-family: $font-family;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+}
+
+// Layout
+section {
+    padding: 0.2em 0;
+}
+
+.subsection {
+    padding-left: 2em;
+    border-left: 2px solid $timeline-line-color;
+    padding-bottom: 1.5em;
+    margin-bottom: -10px;
+
+    &:first-of-type {
+        padding-top: 0;
+        margin-top: 2em;
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 2em;
+    }
+}
+
+
+
+main {
+    padding: 1.5em 5em;
+}
+
+// Grid
+.half {
+    width: 50%;
+    padding-right: 2em;
+
+    &.left {
+        float: left;
+    }
+    &.right {
+        float: right;
+    }
+    
+}
+
+.container {
+    &:after {
+        content:"";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
+// Typography layout
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0.5em 0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $text-heading-color;
+}
+
+.subheading {
+    font-style: italic;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+
+// Typography colour
+p {
+    color: $text-body-color;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+// Custom
+header {
+    background-color: lightgrey;
+    background-image: url($header-image-url);
+    background-size: cover;
+    padding: 3em 5em;
+
+    &>h1, h2, h3, h4, h5, h6, a, p, li {
+        color: $text-header-color;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+}
+
+.subsection {
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     background-color: white;
+    //     border: 5px solid $timeline-dot-color;
+    //     display: inline-block;
+    //     transform: translate(-30px, 0);
+    //     border-radius: 5px;
+    // }
+}
+
+a:visited, a:hover, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.contact ul {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2em;
+
+    & li {
+        float: left;
+        margin-right: 2em;
+    }
+}
+
+.fa {
+    // margin-right: 0.4em;
+    transform-origin: left;
+    transform: translate(-33px, -5px);
+    // transform: scale(3, 3);
+    color: $icon-color;
+    position: absolute;
+    background-color: white;
+    padding: 5px 0;
+}

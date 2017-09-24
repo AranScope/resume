@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900");
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  font-size: 12px; }
+
+body {
+  background: #cccccc;
+  font-family: "Lato", sans-serif; }
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5); }
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm; }
+
+section {
+  padding: 0.2em 0; }
+
+.subsection {
+  padding-left: 2em;
+  border-left: 2px solid #f5f5f5;
+  padding-bottom: 1.5em;
+  margin-bottom: -10px; }
+  .subsection:first-of-type {
+    padding-top: 0;
+    margin-top: 2em; }
+  .subsection:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 2em; }
+
+main {
+  padding: 1.5em 5em; }
+
+.half {
+  width: 50%;
+  padding-right: 2em; }
+  .half.left {
+    float: left; }
+  .half.right {
+    float: right; }
+
+.container:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0.5em 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3C3C3C; }
+
+.subheading {
+  font-style: italic;
+  font-weight: 300;
+  text-transform: initial; }
+
+p {
+  margin: 0.5em 0; }
+
+p {
+  color: #1E1717;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.05em; }
+
+header {
+  background-color: lightgrey;
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/foggy-mountain-ridge-eric-tressler.jpg");
+  background-size: cover;
+  padding: 3em 5em; }
+  header > h1, header h2, header h3, header h4, header h5, header h6, header a, header p, header li {
+    color: white; }
+  header .title {
+    font-size: 3em; }
+
+a:visited, a:hover, a:link {
+  text-decoration: none;
+  color: inherit; }
+
+.contact ul {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2em; }
+  .contact ul li {
+    float: left;
+    margin-right: 2em; }
+
+.fa {
+  transform-origin: left;
+  transform: translate(-33px, -5px);
+  color: #e3e3e3;
+  position: absolute;
+  background-color: white;
+  padding: 5px 0; }
