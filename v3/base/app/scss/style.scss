@@ -174,13 +174,17 @@ a:visited, a:hover, a:link {
     }
 }
 
-.fa {
+main .fa {
     // margin-right: 0.4em;
     transform-origin: left;
-    transform: translate(-33px, -5px);
+    transform: translate(-33px, -4px);
     // transform: scale(3, 3);
     color: $icon-color;
     position: absolute;
     background-color: white;
     padding: 5px 0;
+}
+
+header .fa {
+    margin-right: 0.5em;
 }

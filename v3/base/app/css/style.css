@@ -119,10 +119,13 @@ a:visited, a:hover, a:link {
     float: left;
     margin-right: 2em; }
 
-.fa {
+main .fa {
   transform-origin: left;
-  transform: translate(-33px, -5px);
+  transform: translate(-33px, -4px);
   color: #e3e3e3;
   position: absolute;
   background-color: white;
   padding: 5px 0; }
+
+header .fa {
+  margin-right: 0.5em; }
