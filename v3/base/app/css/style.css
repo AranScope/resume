@@ -90,7 +90,7 @@ h6 {
 p {
   margin: 0.5em 0; }
 
-p {
+p, li {
   color: #1E1717;
   line-height: 1.5;
   font-weight: 300;
@@ -104,6 +104,7 @@ header {
   header > h1, header h2, header h3, header h4, header h5, header h6, header a, header p, header li {
     color: white; }
   header .title {
+    margin-top: 0.2em;
     font-size: 3em; }
 
 a:visited, a:hover, a:link {

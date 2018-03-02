@@ -123,7 +123,7 @@ p {
 
 
 // Typography colour
-p {
+p, li {
     color: $text-body-color;
     line-height: 1.5;
     font-weight: 300;
@@ -142,6 +142,7 @@ header {
     }
 
     .title {
+        margin-top: 0.2em;
         font-size: 3em;
     }
 }
