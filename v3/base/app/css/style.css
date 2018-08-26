@@ -100,8 +100,9 @@ header {
   background-color: lightgrey;
   background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/foggy-mountain-ridge-eric-tressler.jpg");
   background-size: cover;
-  padding: 3em 5em; }
-  header > h1, header h2, header h3, header h4, header h5, header h6, header a, header p, header li {
+  padding: 3em 5em;
+  overflow: auto; }
+  header h1, header h2, header h3, header h4, header h5, header h6, header a, header p, header li {
     color: white; }
   header .title {
     margin-top: 0.2em;
@@ -112,13 +113,12 @@ a:visited, a:hover, a:link {
   color: inherit; }
 
 .contact ul {
-  display: inline-block;
   margin-top: 10px;
   color: white;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  float: right; }
   .contact ul li {
-    float: left;
-    margin-right: 2em; }
+    margin-top: 0.3em; }
 
 main .fa {
   transform-origin: left;
