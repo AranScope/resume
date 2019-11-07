@@ -58,6 +58,7 @@ section {
     &:last-of-type {
         padding-bottom: 0;
         margin-bottom: 2em;
+        border-left: none;
     }
 }
 
@@ -68,10 +69,10 @@ main {
 // Grid
 .half {
     width: 50%;
-    padding-right: 2em;
 
     &.left {
         float: left;
+        padding-right: 2em; 
     }
     &.right {
         float: right;
@@ -128,10 +129,17 @@ p, li {
     letter-spacing: 0.05em;
 }
 
+.subsection ul {
+    list-style-position: outside;
+    list-style-type: square;
+
+    li {
+        color: $timeline-dot-color;
+    }
+}
+
 // Custom
 header {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    background-color: lightgrey;
     background-image: url($header-image-url);
     background-size: cover;
     padding: 3em 5em;
@@ -180,9 +188,9 @@ a:visited, a:hover, a:link {
     }
 }
 
-main .fa {
+main .fa, .fas, .far {
     // margin-right: 0.4em;
-    transform-origin: left;
+    transform-origin: center;
     transform: translate(-33px, -4px);
     // transform: scale(3, 3);
     color: $icon-color;

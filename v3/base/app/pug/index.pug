@@ -5,7 +5,7 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         
         link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
-        link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css")
         link(rel="stylesheet" type="text/css" href="css/style.css")
 
         title Aran Long - CV
@@ -17,26 +17,72 @@ html(lang="en")
             header
                 .half.left
                     h1.title Aran Long
-                    h2.subheading.subtitle Software Developer
+                    h2.subheading.subtitle Software Engineer
                     
                 .half.right
                     .contact 
                         ul
                             li: a(href="tel:+447933282564")
-                                    i.fa.fa-phone
+                                    i.fa.fa-fw.fa-mobile-alt
                                     | (+44) 7933 282564
                             li: a(href="mailto:hello@aran.site")
-                                    i.fa.fa-envelope
+                                    i.fa.fa-fw.fa-envelope
                                     | hello@aran.site
                             li: a(href="https://aran.site") 
-                                    i.fa.fa-globe
+                                    i.fa.fa-fw.fa-globe
                                     | https://aran.site
             main
                 section.about
                     h4 Biography
-                    p Technology Analyst in the Investment Banking Division at Goldman Sachs. First class University of Birmingham Computer Science graduate.
+                    p Backend Engineer always seeking new challenges. Currently finding them at Monzo and previously, at Goldman Sachs.
                 .container
                     .half.left
+                        section.experience
+                            h4 Experience
+                            .subsection
+                                h5
+                                    i.fa.fa-fw.fa-credit-card
+                                    | Monzo
+                                h6.subheading Backend Engineer, Sep 2018 - Present
+                                p Worked in customer operations platforms as we surpassed 3M customers.
+                                p Experience in Golang and distributed systems.
+                            .subsection
+                                h5
+                                    i.fa.fa-fw.fa-university
+                                    | Goldman Sachs
+                                h6.subheading Technology Analyst, Jul 2018 - Aug 2019
+                                p Worked in investment banking technology, supporting deals such as the Uber IPO.
+                                p Worked on uplifting legacy syndication platform to modern microservice architecture.
+                            .subsection
+                                h5
+                                    i.fas.fa-fw.fa-id-card
+                                    | UK Government
+                                h6.subheading Blockchain Research Intern, Summer 2017
+                                p Developed academic credential verification system based on MIT's 'Blockcerts'.
+                                p Full-stack architecture using Hyperledger Fabric, Golang, Node, Docker, Bulma.
+                            .subsection
+                                h5 
+                                    i.fa.fa-fw.fa-cogs
+                                    | Inventive Cogs
+                                h6.subheading Technical Consultant, Sep 2016 - Jul 2018
+                                p Developed patent pending level 2 self-driving automation systems.
+                                p Completed funded dissertation which was presented to Bosch and the Department for Transport, helping to gain initial seed funding.
+                            .subsection
+                                h5
+                                    i.far.fa-fw.fa-object-ungroup
+                                    | Autodesk
+                                h6.subheading Software Engineer Intern, Summer 2016
+                                p Rebuilt core XML abstract library in C++, resulting in 100% backend UNIX compatibility.
+                                p Implemented error checking into macro scripting.
+                        section.certifications    
+                            h4 Certifications
+                            .subsection
+                                h5
+                                    i.fa.fa-fw.fa-certificate
+                                    | Pluralsight
+                                h6.subheading Blockchain Fundamentals
+
+                    .half.right
                         section.education
                             h4 Education
                             .subsection
@@ -44,54 +90,13 @@ html(lang="en")
                                     i.fa.fa-fw.fa-graduation-cap
                                     | University of Birmingham
                                 h6.subheading Computer Science BSc, 2015 - 2018
-                                ul
-                                    li First Class Honours - 80%
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-graduation-cap
-                                    | St. Brendan's Sixth Form
-                                h6.subheading A-Levels, 2013 - 2015
-                                ul
-                                    li A2 - A* A A
-                                    li AS - A A A A
-                        section.experience
-                            h4 Experience
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-money
-                                    | Goldman Sachs
-                                h6.subheading Technology Analyst, July 2018 - Present
-                                p Working in Investment Banking technology. Experience delivering business critical, robust applications against firm deadlines.
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-id-card
-                                    | UK Government
-                                h6.subheading Blockchain Research Intern, Summer 2017
-                                p Using Hyperledger fabric, GoLang, Node, Docker etc. to develop adaptation of MIT's 'blockcerts', verifying academic credentials on the blockchain.
-                            .subsection
-                                h5 
-                                    i.fa.fa-fw.fa-cogs
-                                    | Inventive Cogs
-                                h6.subheading Technical Consultant, Sep 2016 - July 2018
-                                p Developed internal microservices, worked on various patent pending optimisation strategies, completed funded dissertation which was presented to Bosch and the Department for Transport, helping to gain initial seed funding.
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-file-code-o
-                                    | Autodesk
-                                h6.subheading C++ Software Engineer Intern, Summer 2016
-                                p Rebuilt core XML abstract library, resulting in 100% backend UNIX compatibility. Implemented error checking into macro scripting.
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-university
-                                    | University of Birmingham
-                                h6.subheading Student Ambassador, Nov 2015 – Sep 2016
-
-                    .half.right
+                                p First Class Honours - 80%
+                                p Dissertation - 82%
                         section.projects
                             h4 Awards / Projects
                             .subsection
                                 h5
-                                    i.fa.fa-fw.fa-id-badge
+                                    i.fa.fa-fw.fa-id-card
                                     | Pedalo
                                 h6.subheading HackTheNorth - Waterloo, Canada, Sep 2017
                                 p Ethereum blockchain based credential verification. Awarded "best use of blockchain", the highest value prize at the largest hackathon in Canada. Additionally received pre-seed grant from 1517fund - a Silicon Valley based fund.
@@ -106,10 +111,10 @@ html(lang="en")
                                     i.fa.fa-fw.fa-mouse-pointer
                                     | Notifi.Click
                                 h6.subheading HackUPC - Barcelona, Spain, Oct 2016
-                                p Awarded best use of Amazon AWS for developing a no-cost nofification system. Built using a microservices architecture and Dash buttons.
+                                p Awarded best use of Amazon AWS for developing a no-cost nofification system. Built using a serverless architecture and Amazon Dash buttons.
                             .subsection
                                 h5
-                                    i.fa.fa-fw.fa-television
+                                    i.fa.fa-fw.fa-tv
                                     | Gadget Show
                                 h6.subheading Birmingham, UK, Summer 2016
                                 p Developed, with a team of 10, a speed dating chatbot that featured on the UK TV series. Built the data entry stack, architected the project.
@@ -119,10 +124,3 @@ html(lang="en")
                                     | Cisco
                                 h6.subheading Heathrow, UK, Oct 2015
                                 p Awarded first-place prize for developing ‘Permission Cloud’. A Blockchain based IOT permissions system developed with Barclays.
-                        section.certifications
-                            h4 Certifications
-                            .subsection
-                                h5
-                                    i.fa.fa-fw.fa-certificate
-                                    | Pluralsight
-                                h6.subheading Blockchain Fundamentals
